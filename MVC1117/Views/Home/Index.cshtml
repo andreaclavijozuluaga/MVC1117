@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>HOSPITAL</h1>
+    <p class="lead">Crear </p>
+    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>@Html.ActionLink("Información citas","Index", "citas")</h2>
+        <p>
+            Aquí puedes crear las citas.
+        </p>
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>@Html.ActionLink("Información medicos", "Index", "medicos")</h2>
+        <p>
+            Aquí puedes consultar, crear o editar el estado de los medicos.
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>@Html.ActionLink("Información pacientes", "Index", "pacientes")</h2>
+        <p>
+            Aquí crearas la información del paciente.
+        </p>
+    </div>
+</div>
